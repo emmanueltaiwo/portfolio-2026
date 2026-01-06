@@ -6,13 +6,26 @@ import ProfileFrame from './profile-frame';
 
 export default function Hero() {
   return (
-    <section id='hero' className='relative pt-16 md:pt-24 lg:pt-32 pb-12 overflow-hidden'>
+    <section
+      id='hero'
+      className='relative pt-16 md:pt-24 lg:pt-32 pb-12 overflow-hidden'
+    >
       {/* Full-width Sci-fi Background Graphics */}
       <div className='absolute inset-0 pointer-events-none opacity-20'>
         {/* Animated Grid */}
-        <svg className='absolute inset-0 w-full h-full' xmlns='http://www.w3.org/2000/svg'>
+        <svg
+          className='absolute inset-0 w-full h-full'
+          xmlns='http://www.w3.org/2000/svg'
+        >
           <defs>
-            <pattern id='heroGrid' x='0' y='0' width='40' height='40' patternUnits='userSpaceOnUse'>
+            <pattern
+              id='heroGrid'
+              x='0'
+              y='0'
+              width='40'
+              height='40'
+              patternUnits='userSpaceOnUse'
+            >
               <path
                 d='M 40 0 L 0 0 0 40'
                 fill='none'
@@ -89,10 +102,20 @@ export default function Hero() {
             fill='none'
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: 'reverse',
+            }}
           />
           <defs>
-            <linearGradient id='cornerGradient' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <linearGradient
+              id='cornerGradient'
+              x1='0%'
+              y1='0%'
+              x2='100%'
+              y2='100%'
+            >
               <stop offset='0%' stopColor='#FFFFFF' />
               <stop offset='100%' stopColor='#A0A0A0' />
             </linearGradient>
@@ -112,10 +135,21 @@ export default function Hero() {
             fill='none'
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', delay: 1 }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              delay: 1,
+            }}
           />
           <defs>
-            <linearGradient id='cornerGradient2' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <linearGradient
+              id='cornerGradient2'
+              x1='0%'
+              y1='0%'
+              x2='100%'
+              y2='100%'
+            >
               <stop offset='0%' stopColor='#A0A0A0' />
               <stop offset='100%' stopColor='#FFFFFF' />
             </linearGradient>
@@ -126,7 +160,8 @@ export default function Hero() {
         <motion.div
           className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96'
           style={{
-            background: 'radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)',
+            background:
+              'radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)',
           }}
           animate={{
             scale: [1, 1.2, 1],
@@ -143,74 +178,74 @@ export default function Hero() {
       {/* Content Container */}
       <div className='relative z-10 mx-auto max-w-2xl px-4 md:px-0'>
         <div className='space-y-6 md:space-y-8'>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-        >
-          <ProfileFrame src='/assets/profile1.png' alt='Profile' />
-        </motion.div>
-
-        <motion.h2
-          className='text-xl md:text-2xl lg:text-3xl font-semibold leading-tight'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          I&apos;m a software engineer with 5+ years of experience building and
-          shipping products for startups and enterprises.
-        </motion.h2>
-
-        <motion.p
-          className='text-sm md:text-base lg:text-lg text-muted-foreground font-light leading-relaxed'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          Building full-stack web apps, AI-powered tools, and automated
-          workflows that scale.
-        </motion.p>
-
-        <motion.div
-          className='flex flex-col sm:flex-row items-stretch sm:items-center gap-3 md:gap-4 pt-4'
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <motion.a
-            href='mailto:hello@emmanueltaiwo.dev'
-            className='px-6 py-3 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 text-white font-medium rounded-md flex items-center justify-center gap-2 relative overflow-hidden group shadow-[0_0_20px_rgba(255,215,0,0.3)]'
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
-            <motion.div
-              className='absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 opacity-0 group-hover:opacity-100'
-              transition={{ duration: 0.3 }}
-            />
-            <MessageCircle className='w-5 h-5 relative z-10' />
-            <span className='relative z-10'>Hire Me</span>
-            <motion.div
-              className='absolute inset-0 border border-yellow-400/50 rounded-md'
-              initial={{ opacity: 0 }}
-              whileHover={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.a>
+            <ProfileFrame src='/assets/profile1.png' alt='Profile' />
+          </motion.div>
 
-          <motion.a
-            href='https://drive.google.com/file/d/1f5KTbPXH97P2cHGrZU-VS6h05gT0Q3b0/view?usp=sharing'
-            target='_blank'
-            className='px-6 py-3 border border-border bg-[rgb(39,39,39)] transition-colors rounded-md text-center relative overflow-hidden group'
-            whileHover={{ scale: 1.05, borderColor: 'rgb(255, 215, 0)' }}
-            whileTap={{ scale: 0.95 }}
+          <motion.h2
+            className='text-xl md:text-2xl lg:text-3xl font-semibold leading-tight'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className='relative z-10'>My Resumé</span>
-            <motion.div
-              className='absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100'
-              transition={{ duration: 0.3 }}
-            />
-          </motion.a>
-        </motion.div>
+            I&apos;m a software engineer with 5+ years of experience building
+            and shipping products for startups and enterprises.
+          </motion.h2>
+
+          <motion.p
+            className='text-sm md:text-base lg:text-lg text-muted-foreground font-light leading-relaxed'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            Building full-stack web apps, AI-powered tools, and automated
+            workflows that scale.
+          </motion.p>
+
+          <motion.div
+            className='flex flex-col sm:flex-row items-stretch sm:items-center gap-3 md:gap-4 pt-4'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <motion.a
+              href='mailto:hello@emmanueltaiwo.dev'
+              className='px-6 py-3 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 text-white font-medium rounded-md flex items-center justify-center gap-2 relative overflow-hidden group shadow-[0_0_20px_rgba(255,215,0,0.3)]'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <motion.div
+                className='absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 opacity-0 group-hover:opacity-100'
+                transition={{ duration: 0.3 }}
+              />
+              <MessageCircle className='w-5 h-5 relative z-10' />
+              <span className='relative z-10'>Hire Me</span>
+              <motion.div
+                className='absolute inset-0 border border-yellow-400/50 rounded-md'
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.a>
+
+            <motion.a
+              href='https://drive.google.com/file/d/1f5KTbPXH97P2cHGrZU-VS6h05gT0Q3b0/view?usp=sharing'
+              target='_blank'
+              className='px-6 py-3 border border-border bg-[rgb(39,39,39)] transition-colors rounded-md text-center relative overflow-hidden group'
+              whileHover={{ scale: 1.05, borderColor: 'rgb(255, 215, 0)' }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className='relative z-10'>My Resumé</span>
+              <motion.div
+                className='absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100'
+                transition={{ duration: 0.3 }}
+              />
+            </motion.a>
+          </motion.div>
         </div>
       </div>
     </section>
