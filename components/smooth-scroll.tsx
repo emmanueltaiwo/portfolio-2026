@@ -3,7 +3,11 @@
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 
-export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+export default function SmoothScroll({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -12,8 +16,6 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
       gestureOrientation: 'vertical',
       smoothWheel: true,
       wheelMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
       infinite: false,
     });
 
@@ -28,12 +30,12 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest('a[href^="#"]');
-      
+
       if (anchor) {
         const href = anchor.getAttribute('href');
         if (href && href !== '#') {
           e.preventDefault();
-          const targetElement = document.querySelector(href);
+          const targetElement = document.querySelector(href) as HTMLElement;
           if (targetElement) {
             lenis.scrollTo(targetElement, {
               offset: -80, // Offset for fixed header
@@ -51,7 +53,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     const handleHashChange = () => {
       const hash = window.location.hash;
       if (hash) {
-        const targetElement = document.querySelector(hash);
+        const targetElement = document.querySelector(hash) as HTMLElement;
         if (targetElement) {
           setTimeout(() => {
             lenis.scrollTo(targetElement, {
@@ -81,4 +83,3 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
 
   return <>{children}</>;
 }
-
