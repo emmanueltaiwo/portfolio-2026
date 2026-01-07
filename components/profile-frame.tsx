@@ -12,9 +12,12 @@ interface ProfileFrameProps {
 export default function ProfileFrame({ src, alt }: ProfileFrameProps) {
   return (
     <div className='relative inline-block group'>
-      {/* Iron Man Glow Effect */}
+      {/* Blue Glow Effect */}
       <motion.div
-        className='absolute -inset-2 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 rounded-md blur-xl opacity-70'
+        className='absolute -inset-2 rounded-md blur-xl opacity-70'
+        style={{
+          background: 'linear-gradient(to right, rgb(120, 50, 255), rgb(83, 0, 225), rgb(60, 0, 180))'
+        }}
         animate={{
           opacity: [0.5, 0.8, 0.5],
           scale: [1, 1.05, 1],
@@ -26,11 +29,14 @@ export default function ProfileFrame({ src, alt }: ProfileFrameProps) {
         }}
       />
       <motion.div
-        className='absolute -inset-1 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 rounded-md blur-lg opacity-50 group-hover:opacity-100 transition-opacity duration-500'
+        className='absolute -inset-1 rounded-md blur-lg opacity-50 group-hover:opacity-100 transition-opacity duration-500'
+        style={{
+          background: 'linear-gradient(to right, rgb(140, 70, 255), rgb(100, 20, 240), rgb(80, 10, 200))'
+        }}
       />
 
       {/* Profile image container */}
-      <div className='relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-md overflow-hidden border-2 border-yellow-500/50 shadow-[0_0_20px_rgba(255,215,0,0.5)]'>
+      <div className='relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-md overflow-hidden border-2 shadow-[0_0_20px_rgba(83,0,225,0.5)]' style={{ borderColor: 'rgba(83, 0, 225, 0.5)' }}>
         <Image
           src={src || '/placeholder.svg'}
           alt={alt}
@@ -60,7 +66,7 @@ export default function ProfileFrame({ src, alt }: ProfileFrameProps) {
                   y1='0'
                   x2='100'
                   y2='0'
-                  stroke='#FFD700'
+                  stroke='#5300E1'
                   strokeWidth='0.5'
                   opacity='0.6'
                 />
@@ -72,22 +78,26 @@ export default function ProfileFrame({ src, alt }: ProfileFrameProps) {
 
         {/* Corner Accents */}
         <motion.div
-          className='absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-yellow-500'
+          className='absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2'
+          style={{ borderColor: 'rgb(83, 0, 225)' }}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
         />
         <motion.div
-          className='absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-yellow-500'
+          className='absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2'
+          style={{ borderColor: 'rgb(83, 0, 225)' }}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
         />
         <motion.div
-          className='absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-yellow-500'
+          className='absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2'
+          style={{ borderColor: 'rgb(83, 0, 225)' }}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: 1 }}
         />
         <motion.div
-          className='absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-yellow-500'
+          className='absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2'
+          style={{ borderColor: 'rgb(83, 0, 225)' }}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: 1.5 }}
         />

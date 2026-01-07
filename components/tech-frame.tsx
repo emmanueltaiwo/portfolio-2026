@@ -88,11 +88,11 @@ export default function TechFrame() {
           </feMerge>
         </filter>
 
-        {/* Iron Man Gold/Orange Gradient */}
+        {/* Blue Gradient */}
         <linearGradient id='ironGold' x1='0%' y1='0%' x2='100%' y2='100%'>
-          <stop offset='0%' stopColor='#FFD700' stopOpacity='1' />
-          <stop offset='50%' stopColor='#FF8C00' stopOpacity='1' />
-          <stop offset='100%' stopColor='#FF4500' stopOpacity='1' />
+          <stop offset='0%' stopColor='#7832FF' stopOpacity='1' />
+          <stop offset='50%' stopColor='#5300E1' stopOpacity='1' />
+          <stop offset='100%' stopColor='#3C00B4' stopOpacity='1' />
         </linearGradient>
 
         {/* Arc Reactor Blue/White */}
@@ -104,9 +104,9 @@ export default function TechFrame() {
 
         {/* Holographic Grid */}
         <linearGradient id='holoGrid' x1='0%' y1='0%' x2='100%' y2='100%'>
-          <stop offset='0%' stopColor='#FFD700' stopOpacity='0.3' />
-          <stop offset='50%' stopColor='#FF6B00' stopOpacity='0.2' />
-          <stop offset='100%' stopColor='#FF4500' stopOpacity='0.3' />
+          <stop offset='0%' stopColor='#7832FF' stopOpacity='0.3' />
+          <stop offset='50%' stopColor='#5300E1' stopOpacity='0.2' />
+          <stop offset='100%' stopColor='#3C00B4' stopOpacity='0.3' />
         </linearGradient>
       </defs>
 

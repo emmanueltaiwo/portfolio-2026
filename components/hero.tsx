@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id='hero'
-      className='relative pt-16 md:pt-24 lg:pt-32 pb-12 overflow-hidden'
+      className='relative pt-16 md:pt-24 lg:pt-32 pb-12 overflow-hidden px-0 md:px-0'
     >
       {/* Full-width Sci-fi Background Graphics */}
       <div className='absolute inset-0 pointer-events-none opacity-20'>
@@ -158,7 +158,7 @@ export default function Hero() {
 
         {/* Glow Effect */}
         <motion.div
-          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96'
+          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-96'
           style={{
             background:
               'radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)',
@@ -214,18 +214,27 @@ export default function Hero() {
           >
             <motion.a
               href='mailto:hello@emmanueltaiwo.dev'
-              className='px-6 py-3 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 text-white font-medium rounded-md flex items-center justify-center gap-2 relative overflow-hidden group shadow-[0_0_20px_rgba(255,215,0,0.3)]'
+              className='px-6 py-3 text-white font-medium rounded-md flex items-center justify-center gap-2 relative overflow-hidden group shadow-[0_0_20px_rgba(83,0,225,0.3)]'
+              style={{
+                background:
+                  'linear-gradient(to right, rgb(120, 50, 255), rgb(83, 0, 225), rgb(60, 0, 180))',
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <motion.div
-                className='absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 opacity-0 group-hover:opacity-100'
+                className='absolute inset-0 opacity-0 group-hover:opacity-100'
+                style={{
+                  background:
+                    'linear-gradient(to right, rgb(140, 70, 255), rgb(100, 20, 240), rgb(80, 10, 200))',
+                }}
                 transition={{ duration: 0.3 }}
               />
               <MessageCircle className='w-5 h-5 relative z-10' />
               <span className='relative z-10'>Hire Me</span>
               <motion.div
-                className='absolute inset-0 border border-yellow-400/50 rounded-md'
+                className='absolute inset-0 border rounded-md'
+                style={{ borderColor: 'rgba(83, 0, 225, 0.5)' }}
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
@@ -236,12 +245,16 @@ export default function Hero() {
               href='https://drive.google.com/file/d/1f5KTbPXH97P2cHGrZU-VS6h05gT0Q3b0/view?usp=sharing'
               target='_blank'
               className='px-6 py-3 border border-border bg-[rgb(39,39,39)] transition-colors rounded-md text-center relative overflow-hidden group'
-              whileHover={{ scale: 1.05, borderColor: 'rgb(255, 215, 0)' }}
+              whileHover={{ scale: 1.05, borderColor: 'rgb(83, 0, 225)' }}
               whileTap={{ scale: 0.95 }}
             >
               <span className='relative z-10'>My Resumé</span>
               <motion.div
-                className='absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100'
+                className='absolute inset-0 opacity-0 group-hover:opacity-100'
+                style={{
+                  background:
+                    'linear-gradient(to right, rgba(120, 50, 255, 0.1), rgba(83, 0, 225, 0.1), rgba(60, 0, 180, 0.1))',
+                }}
                 transition={{ duration: 0.3 }}
               />
             </motion.a>

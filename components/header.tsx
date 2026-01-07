@@ -93,7 +93,10 @@ export default function Header() {
                     <span className='relative'>
                       {link.label}
                       <motion.span
-                        className='absolute bottom-0 left-0 w-0 h-[1px] bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500'
+                        className='absolute bottom-0 left-0 w-0 h-[1px]'
+                        style={{
+                          background: 'linear-gradient(to right, rgb(120, 50, 255), rgb(83, 0, 225), rgb(60, 0, 180))'
+                        }}
                         whileHover={{ width: '100%' }}
                         transition={{ duration: 0.3 }}
                       />
@@ -118,7 +121,8 @@ export default function Header() {
                   >
                     <item.icon className='w-4 h-4 text-sm text-[rgb(170,170,170)] hover:text-foreground transition-colors' />
                     <motion.span
-                      className='absolute inset-0 bg-yellow-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100'
+                      className='absolute inset-0 rounded-full blur-md opacity-0 group-hover:opacity-100'
+                      style={{ backgroundColor: 'rgba(83, 0, 225, 0.2)' }}
                       transition={{ duration: 0.3 }}
                     />
                   </motion.a>
@@ -196,13 +200,19 @@ export default function Header() {
                         className='flex items-center gap-3 p-3 text-[rgb(170,170,170)] hover:text-foreground transition-colors group relative overflow-hidden rounded-lg'
                       >
                         <motion.div
-                          className='absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100'
+                          className='absolute inset-0 opacity-0 group-hover:opacity-100'
+                          style={{
+                            background: 'linear-gradient(to right, rgba(120, 50, 255, 0.1), rgba(83, 0, 225, 0.1), rgba(60, 0, 180, 0.1))'
+                          }}
                           transition={{ duration: 0.3 }}
                         />
                         <link.icon className='w-5 h-5 relative z-10 transition-transform group-hover:scale-110' />
                         <span className='text-lg font-medium relative z-10'>{link.label}</span>
                         <motion.div
-                          className='absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-500'
+                          className='absolute left-0 top-0 bottom-0 w-1'
+                          style={{
+                            background: 'linear-gradient(to bottom, rgb(120, 50, 255), rgb(83, 0, 225), rgb(60, 0, 180))'
+                          }}
                           initial={{ scaleY: 0 }}
                           whileHover={{ scaleY: 1 }}
                           transition={{ duration: 0.3 }}
@@ -229,13 +239,15 @@ export default function Header() {
                         href={item.link}
                         target='_blank'
                         onClick={handleNavClick}
-                        whileHover={{ scale: 1.2, y: -2 }}
+                        whileHover={{ scale: 1.2, y: -2, borderColor: 'rgba(83, 0, 225, 0.5)' }}
                         whileTap={{ scale: 0.9 }}
-                        className='p-3 rounded-lg border border-border hover:border-yellow-500/50 transition-colors relative group'
+                        className='p-3 rounded-lg border border-border transition-colors relative group'
+                        style={{ borderColor: 'inherit' }}
                       >
                         <item.icon className='w-5 h-5 text-[rgb(170,170,170)] group-hover:text-foreground transition-colors' />
                         <motion.span
-                          className='absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100'
+                          className='absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100'
+                          style={{ backgroundColor: 'rgba(83, 0, 225, 0.1)' }}
                           transition={{ duration: 0.3 }}
                         />
                       </motion.a>
@@ -245,7 +257,10 @@ export default function Header() {
 
                 {/* Sci-fi decorative elements */}
                 <motion.div
-                  className='absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-yellow-500 to-transparent'
+                  className='absolute bottom-0 left-0 right-0 h-px'
+                  style={{
+                    background: 'linear-gradient(to right, transparent, rgb(83, 0, 225), transparent)'
+                  }}
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ delay: 0.5, duration: 0.5 }}

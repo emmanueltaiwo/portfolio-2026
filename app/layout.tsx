@@ -8,7 +8,7 @@ import './globals.css';
 const geist = Geist({ subsets: ['latin'] });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://emmanueltaiwo.dev';
-const siteName = 'Emmanuel Taiwo';
+const siteName = 'Emmanuel Taiwo - Software Engineer';
 const description =
   'Full Stack Software Engineer with 5+ years of experience building scalable web applications, AI-powered tools, and automated workflows. Specialized in React, Next.js, Node.js, TypeScript, and AI integration.';
 
