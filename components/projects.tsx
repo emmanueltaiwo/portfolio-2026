@@ -173,7 +173,7 @@ export default function Projects() {
             </div>
 
             <motion.div
-              className='flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 relative z-10'
+              className='flex gap-3 md:gap-4 pt-2 relative z-10'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
