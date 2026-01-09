@@ -7,7 +7,7 @@ export default function Contact() {
   const contactLinks = [
     {
       label: 'Email',
-      href: 'mailto:hello@emmanueltaiwo.dev',
+      href: 'mailto:emmanueltaiwo027@gmail.com',
       icon: Mail,
     },
     {

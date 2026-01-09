@@ -213,7 +213,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <motion.a
-              href='mailto:hello@emmanueltaiwo.dev'
+              href='mailto:emmanueltaiwo027@gmail.com'
               className='px-6 py-3 text-white font-medium rounded-md flex items-center justify-center gap-2 relative overflow-hidden group shadow-[0_0_20px_rgba(83,0,225,0.3)]'
               style={{
                 background:
