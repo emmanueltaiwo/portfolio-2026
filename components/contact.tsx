@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const contactLinks = [
     {
       label: 'Email',
-      href: 'mailto:emmanueltaiwo027@gmail.com',
+      href: 'mailto:emmanueltaiwo019@gmail.com',
       icon: Mail,
     },
     {

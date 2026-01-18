@@ -188,28 +188,11 @@ const SKILLS: Skill[] = [
   },
 ];
 
-const CATEGORIES = ['Frontend', 'Backend', 'Database', 'DevOps', 'AI'] as const;
-
-function getCategoryColor(category: string): string {
-  const colors: Record<string, string> = {
-    Frontend:
-      'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/30 dark:text-blue-400 dark:border-blue-900',
-    Backend:
-      'bg-green-50 text-green-700 border-green-200 dark:bg-green-950/30 dark:text-green-400 dark:border-green-900',
-    Database:
-      'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-950/30 dark:text-purple-400 dark:border-purple-900',
-    DevOps:
-      'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-950/30 dark:text-orange-400 dark:border-orange-900',
-    AI: 'bg-pink-50 text-pink-700 border-pink-200 dark:bg-pink-950/30 dark:text-pink-400 dark:border-pink-900',
-  };
-  return colors[category] || colors.Frontend;
-}
-
 export default function Skills() {
   return (
     <section className='mx-auto max-w-2xl px-4 md:px-0 border-t border-border py-12 md:py-16'>
       <motion.h2
-        className='text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 tracking-tight'
+        className='text-2xl md:text-3xl lg:text-4xl font-bold mb-10 md:mb-12 tracking-tight'
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -218,68 +201,32 @@ export default function Skills() {
         Skills
       </motion.h2>
 
-      <div className='space-y-6 md:space-y-8'>
-        {CATEGORIES.map((category, categoryIndex) => {
-          const categorySkills = SKILLS.filter((s) => s.category === category);
-          return (
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6'>
+        {SKILLS.map((skill, index) => (
+          <motion.div
+            key={skill.name}
+            className='flex flex-col items-center gap-2 p-4 border border-border rounded-lg hover:border-foreground/30 transition-colors group cursor-default'
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: Math.floor(index / 4) * 0.1 + (index % 4) * 0.05,
+              duration: 0.3,
+            }}
+            whileHover={{ y: -4, scale: 1.02 }}
+          >
             <motion.div
-              key={category}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+              className='text-muted-foreground group-hover:text-foreground transition-colors'
+              whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+              transition={{ duration: 0.5 }}
             >
-              <motion.h3
-                className='text-xs md:text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2'
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: categoryIndex * 0.1 + 0.2 }}
-              >
-                <span className='text-cyan-400'>▸</span> {category}
-              </motion.h3>
-              <div className='flex flex-wrap gap-2 md:gap-3'>
-                {categorySkills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skill.name}
-                    className={`flex items-center gap-2 px-2 md:px-3 py-1.5 md:py-2 rounded-lg border transition-all relative overflow-hidden group ${getCategoryColor(
-                      skill.category
-                    )}`}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                      delay: categoryIndex * 0.1 + skillIndex * 0.03,
-                      duration: 0.3,
-                    }}
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  >
-                    <motion.div
-                      className='absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100'
-                      transition={{ duration: 0.3 }}
-                    />
-                    {skill.icon && (
-                      <motion.span
-                        className='shrink-0 relative z-10'
-                        whileHover={{ rotate: 360 }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        {skill.icon}
-                      </motion.span>
-                    )}
-                    <span className='text-xs md:text-sm font-medium relative z-10'>
-                      {skill.name}
-                    </span>
-                    <motion.div
-                      className='absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100'
-                      transition={{ duration: 0.3 }}
-                    />
-                  </motion.div>
-                ))}
-              </div>
+              {skill.icon}
             </motion.div>
-          );
-        })}
+            <span className='text-xs md:text-sm text-center text-muted-foreground group-hover:text-foreground transition-colors font-medium'>
+              {skill.name}
+            </span>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
