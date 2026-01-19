@@ -10,10 +10,27 @@ interface Project {
   links: {
     demo?: string;
     github?: string;
-  };
+  };  
 }
 
 const PROJECTS: Project[] = [
+  {
+  name: 'Limitly',
+  description: 'Limitly is a centralized typescript-first rate-limiting SDK service using Redis and token bucket algorithm, designed to operate across distributed services with graceful degradation and real-time metrics.',
+  stack: [
+    'Node.js',
+    'TypeScript',
+    'Redis',
+    'Express',
+    'Docker',
+    'Railway',
+    'PostHog',
+  ],
+  links: {
+    demo: 'https://limitly.emmanueltaiwo.dev',
+    github: 'https://github.com/emmanueltaiwo/limitly',
+  },
+},
   {
     name: 'Contntly',
     description: 'AI-powered content automation platform for marketing teams',
