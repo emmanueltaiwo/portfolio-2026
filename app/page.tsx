@@ -1,19 +1,127 @@
-import Header from '@/components/header';
-import Hero from '@/components/hero';
-import Projects from '@/components/projects';
-import Skills from '@/components/skills';
-import About from '@/components/about';
-import Contact from '@/components/contact';
+interface Project {
+  name: string;
+  description: string;
+  url: string;
+}
+
+const projects: Project[] = [
+  {
+    name: 'Limitly',
+    description:
+      'TypeScript-first rate limiting service with Redis backend. Built for distributed systems with graceful degradation.',
+    url: 'https://limitly.xyz',
+  },
+  {
+    name: 'Contntly',
+    description:
+      'Content automation platform powered by AI. Streamlines marketing workflows with intelligent generation.',
+    url: 'https://contntly.emmanueltaiwo.dev',
+  },
+  {
+    name: 'Lexify',
+    description:
+      'Contract analysis tool for legal teams. Uses AI to extract insights and identify key clauses.',
+    url: 'https://lexify.emmanueltaiwo.dev',
+  },
+];
 
 export default function Page() {
   return (
-    <main className='min-h-screen bg-background text-foreground pb-8'>
-      <Header />
-      <Hero />
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
+    <main className='min-h-screen bg-[#121212] text-gray-300 noise-bg'>
+      <div className='mx-auto max-w-xl px-6 py-20 md:py-28'>
+        {/* Introduction */}
+        <div className='space-y-5 mb-14'>
+          <h1 className='text-2xl md:text-3xl font-medium text-gray-100 mb-3 tracking-tight'>
+            Emmanuel Taiwo
+          </h1>
+          <p className='text-sm md:text-base leading-relaxed text-gray-400 font-light'>
+            Full-stack engineer building scalable applications and developer
+            tools. Currently focused on distributed systems and AI integration.
+          </p>
+          <p className='text-sm md:text-base leading-relaxed text-gray-400 font-light'>
+            TypeScript, Node.js, React. Building free open source developer
+            tools.
+          </p>
+
+          <p className='text-sm md:text-base leading-relaxed text-white font-light'>
+            I&apos;m currently building{' '}
+            <a
+              href='https://limitly.xyz'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline'
+            >
+              Limitly
+            </a>{' '}
+            a rate limiting service with Redis backend.
+          </p>
+        </div>
+
+        {/* Social Links */}
+        <div className='mb-20 space-x-5'>
+          <a
+            href='https://drive.google.com/file/d/1f5KTbPXH97P2cHGrZU-VS6h05gT0Q3b0/view'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            Resumé
+          </a>
+          <a
+            href='https://github.com/emmanueltaiwo'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            GitHub
+          </a>
+          <a
+            href='mailto:emmanueltaiwo019@gmail.com'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            Email
+          </a>
+          <a
+            href='https://linkedin.com/in/emmanueloluwafunso'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        {/* Projects */}
+        <div className='mb-20'>
+          <h2 className='text-lg md:text-xl font-normal mb-10 text-gray-200 tracking-tight'>
+            Projects
+          </h2>
+          <div className='space-y-8'>
+            {projects.map((project) => (
+              <div key={project.name}>
+                <a
+                  href={project.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-base md:text-lg font-medium underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 block mb-2'
+                >
+                  {project.name}
+                </a>
+                <p className='text-sm text-gray-500 font-light leading-relaxed'>
+                  {project.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className='border-t border-gray-800/50 pt-8'>
+          <p className='text-xs text-gray-600 text-center font-light'>
+            © {new Date().getFullYear()} Emmanuel Taiwo
+          </p>
+        </div>
+      </div>
     </main>
   );
 }

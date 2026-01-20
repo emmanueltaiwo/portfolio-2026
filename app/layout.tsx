@@ -2,7 +2,6 @@ import type React from 'react';
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
-import SmoothScroll from '@/components/smooth-scroll';
 import './globals.css';
 
 const geist = Geist({ subsets: ['latin'] });
@@ -162,9 +161,8 @@ export default function RootLayout({
   return (
     <html lang='en' className='dark'>
       <body
-        className={`${geist.className} antialiased bg-background text-foreground`}
-      >
-        <SmoothScroll>{children}</SmoothScroll>
+        className={`${geist.className} antialiased`}>
+        {children}
         <Analytics />
       </body>
     </html>
