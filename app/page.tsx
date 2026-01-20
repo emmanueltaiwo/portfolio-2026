@@ -82,6 +82,14 @@ export default function Page() {
             Email
           </a>
           <a
+            href='https://x.com/ex0xai'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            X
+          </a>
+          <a
             href='https://linkedin.com/in/emmanueloluwafunso'
             target='_blank'
             rel='noopener noreferrer'
