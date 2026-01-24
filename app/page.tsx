@@ -6,6 +6,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'TypeServe',
+    description:
+      'TypeServe is the first and only tool that generates mock APIs directly from TypeScript types.',
+    url: 'https://typeserve.com',
+  },
+  {
     name: 'Limitly',
     description:
       'TypeScript-first rate limiting service with Redis backend. Built for distributed systems with graceful degradation.',
@@ -34,11 +40,11 @@ export default function Page() {
           <h1 className='text-2xl md:text-3xl font-medium text-gray-100 mb-3 tracking-tight'>
             Emmanuel Taiwo
           </h1>
-          <p className='text-sm md:text-base leading-relaxed text-gray-400 font-light'>
+          <p className='text-sm md:text-base leading-relaxed text-gray-300 font-light'>
             Full-stack engineer building scalable applications and developer
             tools. Currently focused on distributed systems and AI integration.
           </p>
-          <p className='text-sm md:text-base leading-relaxed text-gray-400 font-light'>
+          <p className='text-sm md:text-base leading-relaxed text-gray-300 font-light'>
             TypeScript, Node.js, React. Building free open source developer
             tools.
           </p>
@@ -115,7 +121,7 @@ export default function Page() {
                 >
                   {project.name}
                 </a>
-                <p className='text-sm text-gray-500 font-light leading-relaxed'>
+                <p className='text-sm text-gray-300 font-light leading-relaxed'>
                   {project.description}
                 </p>
               </div>
@@ -124,8 +130,8 @@ export default function Page() {
         </div>
 
         {/* Footer */}
-        <div className='border-t border-gray-800/50 pt-8'>
-          <p className='text-xs text-gray-600 text-center font-light'>
+        <div className='border-t border-gray-600/50 pt-8'>
+          <p className='text-sm text-gray-300 text-center font-light'>
             © {new Date().getFullYear()} Emmanuel Taiwo
           </p>
         </div>
