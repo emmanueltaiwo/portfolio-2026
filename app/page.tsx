@@ -27,7 +27,7 @@ const projects: Project[] = [
 
 export default function Page() {
   return (
-    <main className='min-h-screen bg-[#121212] text-gray-300 noise-bg'>
+    <main className='min-h-screen noise-bg'>
       <div className='mx-auto max-w-xl px-6 py-20 md:py-28'>
         {/* Introduction */}
         <div className='space-y-5 mb-14'>
@@ -46,14 +46,14 @@ export default function Page() {
           <p className='text-sm md:text-base leading-relaxed text-white font-light'>
             I&apos;m currently building{' '}
             <a
-              href='https://limitly.xyz'
+              href='https://typeserve.com'
               target='_blank'
               rel='noopener noreferrer'
               className='underline'
             >
-              Limitly
-            </a>{' '}
-            a rate limiting service with Redis backend.
+              TypeServe
+            </a>
+            , a tool that generates mock APIs directly from TypeScript types.
           </p>
         </div>
 
