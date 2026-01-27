@@ -17,18 +17,6 @@ const projects: Project[] = [
       'TypeScript-first rate limiting service with Redis backend. Built for distributed systems with graceful degradation.',
     url: 'https://limitly.xyz',
   },
-  {
-    name: 'Contntly',
-    description:
-      'Content automation platform powered by AI. Streamlines marketing workflows with intelligent generation.',
-    url: 'https://contntly.emmanueltaiwo.dev',
-  },
-  {
-    name: 'Lexify',
-    description:
-      'Contract analysis tool for legal teams. Uses AI to extract insights and identify key clauses.',
-    url: 'https://lexify.emmanueltaiwo.dev',
-  },
 ];
 
 export default function Page() {
@@ -59,7 +47,8 @@ export default function Page() {
             >
               TypeServe
             </a>
-            , a tool that generates mock APIs directly from TypeScript types.
+            , the first and only tool that generates mock APIs directly from
+            TypeScript types.
           </p>
         </div>
 
