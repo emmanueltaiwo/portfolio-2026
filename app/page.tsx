@@ -6,9 +6,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'TypeServe Live',
+    description:
+      'Generate temporary mock APIs instantly from your TypeScript type definitions in the web.',
+    url: 'https://typeserve.live',
+  },
+  {
     name: 'TypeServe',
     description:
-      'TypeServe is the first and only tool that generates mock APIs directly from TypeScript types.',
+      'The first and only CLI tool that generates mock APIs directly from TypeScript types .',
     url: 'https://typeserve.com',
   },
   {
