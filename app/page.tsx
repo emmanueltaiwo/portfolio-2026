@@ -39,8 +39,16 @@ export default function Page() {
             tools. Currently focused on distributed systems and AI integration.
           </p>
           <p className='text-sm md:text-base leading-relaxed text-gray-300 font-light'>
-            TypeScript, Node.js, React. Building free open source developer
-            tools.
+            I share technical deep dives and engineering write-ups on{' '}
+            <a
+              href='https://medium.com/@emmanueloluwafunso'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline text-white'
+            >
+              Medium
+            </a>
+            .
           </p>
 
           <p className='text-sm md:text-base leading-relaxed text-white font-light'>
@@ -97,6 +105,14 @@ export default function Page() {
             className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
           >
             LinkedIn
+          </a>
+          <a
+            href='https://medium.com/@emmanueloluwafunso'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm md:text-base underline decoration-gray-600 hover:decoration-gray-400 transition-all duration-300 font-light'
+          >
+            Medium
           </a>
         </div>
 
