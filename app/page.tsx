@@ -6,6 +6,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'Snapwyr',
+    description:
+      'Zero-config HTTP request logger for Node.js with a real-time web dashboard.',
+    url: 'https://snapwyr.xyz',
+  },
+  {
     name: 'TypeServe Live',
     description:
       'Generate temporary mock APIs instantly from your TypeScript type definitions in the web.',
@@ -14,7 +20,7 @@ const projects: Project[] = [
   {
     name: 'TypeServe',
     description:
-      'The first and only CLI tool that generates mock APIs directly from TypeScript types .',
+      'The first and only CLI tool that generates mock APIs directly from TypeScript types.',
     url: 'https://typeserve.com',
   },
   {
@@ -54,15 +60,15 @@ export default function Page() {
           <p className='text-sm md:text-base leading-relaxed text-white font-light'>
             I&apos;m currently building{' '}
             <a
-              href='https://typeserve.com'
+              href='https://snapwyr.xyz'
               target='_blank'
               rel='noopener noreferrer'
               className='underline'
             >
-              TypeServe
+              Snapwyr
             </a>
-            , the first and only tool that generates mock APIs directly from
-            TypeScript types.
+            , a zero-config HTTP request logger for Node.js with a real-time web
+            dashboard.
           </p>
         </div>
 
