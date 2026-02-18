@@ -6,6 +6,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'CountdownParty',
+    description:
+      'Create beautiful and customizable real-time countdown for any event.',
+    url: 'https://countdownparty.xyz',
+  },
+  {
     name: 'Snapwyr',
     description:
       'Zero-config HTTP request logger for Node.js with a real-time web dashboard.',
