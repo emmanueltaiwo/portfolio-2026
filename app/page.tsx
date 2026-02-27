@@ -6,6 +6,11 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'Ghstories',
+    description: 'Turn your github commits into stories',
+    url: 'https://ghstories.xyz',
+  },
+  {
     name: 'CountdownParty',
     description:
       'Create beautiful and customizable real-time countdown for any event.',
@@ -66,15 +71,14 @@ export default function Page() {
           <p className='text-sm md:text-base leading-relaxed text-white font-light'>
             I&apos;m currently building{' '}
             <a
-              href='https://snapwyr.xyz'
+              href='https://ghstories.xyz'
               target='_blank'
               rel='noopener noreferrer'
               className='underline'
             >
-              Snapwyr
+              Ghstories
             </a>
-            , a zero-config HTTP request logger for Node.js with a real-time web
-            dashboard.
+            , a tool that turns your github commits into stories.
           </p>
         </div>
 
