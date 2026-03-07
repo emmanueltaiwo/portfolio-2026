@@ -10,6 +10,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'MRRradar',
+    description: 'Global map of profitable startups from TrustMRR API.',
+    url: 'https://mrrradar.com',
+    image: '/mrrradar.png',
+  },
+  {
     name: 'Ghstories',
     description: 'Turn your github commits into stories',
     url: 'https://ghstories.xyz',
