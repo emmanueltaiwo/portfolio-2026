@@ -9,7 +9,7 @@ Emmanuel Taiwo is a Software Engineer in Nigeria with 5+ years of experience. Fu
 ## What I do
 
 - **Full-stack engineering** — Scalable web applications, APIs, and developer tools. TypeScript, React, Next.js, Node.js, PostgreSQL, MongoDB, Supabase, AWS, Docker, CI/CD.
-- **Developer products** — Built Snapwyr (HTTP request logger for Node.js - snapwyr.xyz), TypeServe (CLI for mock APIs from TypeScript types - typeserve.com), TypeServe Live (browser-based mock API generator - typeserve.live), Limitly (rate limiting with Redis - limitly.xyz).
+- **Developer products** — Built Voice Globe (voice messages anywhere on Earth - voiceglobe.live), MRRradar (map of profitable startups - mrrradar.com), Ghstories (GitHub commits as stories - ghstories.xyz), CountdownParty (real-time countdowns - countdownparty.xyz), Snapwyr (HTTP request logger for Node.js - snapwyr.xyz), TypeServe (CLI for mock APIs from TypeScript types - typeserve.com), TypeServe Live (browser-based mock API generator - typeserve.live), Limitly (rate limiting with Redis - limitly.xyz).
 - **Technical writing** — Deep dives and engineering write-ups on Medium.
 
 ---
@@ -33,11 +33,27 @@ Full context (longer version for larger context windows): ${BASE_URL}/llms-full.
 
 **Home**
 ${BASE_URL}
-Portfolio: Emmanuel Taiwo — software engineer in Nigeria, full stack developer. Intro, links (Resumé, GitHub, Email, X, LinkedIn, Medium), and projects (Snapwyr, TypeServe Live, TypeServe, Limitly).
+Portfolio: Emmanuel Taiwo — software engineer in Nigeria, full stack developer. Intro, links (Resumé, GitHub, Email, X, LinkedIn, Medium), and projects (Voice Globe, MRRradar, Ghstories, CountdownParty, Snapwyr, TypeServe Live, TypeServe, Limitly).
 
 ---
 
 ## Projects (with links)
+
+**Voice Globe**
+https://voiceglobe.live
+VoiceGlobe lets users leave short voice messages anywhere on Earth.
+
+**MRRradar**
+https://mrrradar.com
+Global map of profitable startups from TrustMRR API.
+
+**Ghstories**
+https://ghstories.xyz
+Turn your github commits into stories.
+
+**CountdownParty**
+https://countdownparty.xyz
+Create beautiful and customizable real-time countdown for any event.
 
 **Snapwyr**
 https://snapwyr.xyz
@@ -64,7 +80,7 @@ TypeScript-first rate limiting service with Redis backend. Built for distributed
 - Contact: emmanueltaiwo019@gmail.com; portfolio ${BASE_URL}; Resumé, GitHub, LinkedIn, X, Medium linked on site.
 - Focus: Scalable web apps, AI integration, developer tools, distributed systems.
 - Tech: TypeScript, React, Next.js, Node.js, PostgreSQL, MongoDB, Supabase, OpenAI, AWS, Docker.
-- Projects: Snapwyr, TypeServe, TypeServe Live, Limitly (see links above).
+- Projects: Voice Globe, MRRradar, Ghstories, CountdownParty, Snapwyr, TypeServe Live, TypeServe, Limitly (see links above).
 - Key page: Home (${BASE_URL}) with intro, social links, and project list.
 `;
 

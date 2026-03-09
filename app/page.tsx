@@ -10,6 +10,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'Voice Globe',
+    description:
+      'VoiceGlobe lets users leave short voice messages anywhere on Earth.',
+    url: 'https://voiceglobe.live',
+    image: '/voiceglobe.png',
+  },
+  {
     name: 'MRRradar',
     description: 'Global map of profitable startups from TrustMRR API.',
     url: 'https://mrrradar.com',

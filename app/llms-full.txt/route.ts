@@ -12,7 +12,7 @@ Emmanuel Taiwo is a Software Engineer in Nigeria with 5+ years of experience. Fu
 - **Experience**: 5+ years building production web applications, APIs, and developer tools.
 - **Focus areas**: Distributed systems, AI integration, developer experience (DX), TypeScript/JavaScript ecosystems.
 - **Technical writing**: Publishes technical deep dives and engineering write-ups on Medium (@emmanueloluwafunso).
-- **Current work**: Building Snapwyr — a zero-config HTTP request logger for Node.js with a real-time web dashboard.
+- **Current work**: Building Ghstories — turn your GitHub commits into stories (ghstories.xyz).
 
 Technologies and tools: TypeScript, JavaScript, React, Next.js, Node.js, PostgreSQL, MongoDB, Supabase, OpenAI, AWS, Docker, CI/CD. Experience with rate limiting, mock APIs, logging, and backend services.
 
@@ -41,9 +41,9 @@ For quotes, hiring, or collaboration, use the portfolio (${BASE_URL}) or email a
 - **Heading**: Emmanuel Taiwo.
 - **Intro**: Software engineer in Nigeria. Full-stack engineer building scalable applications and developer tools. Currently focused on distributed systems and AI integration.
 - **Writing**: Shares technical deep dives and engineering write-ups on Medium (link to https://medium.com/@emmanueloluwafunso).
-- **Current project**: Building Snapwyr (https://snapwyr.xyz), a zero-config HTTP request logger for Node.js with a real-time web dashboard.
+- **Current project**: Building Ghstories (https://ghstories.xyz), turn your GitHub commits into stories.
 - **Links**: Resumé (Google Drive), GitHub, Email, X, LinkedIn, Medium.
-- **Projects section**: List of four projects with names, descriptions, and URLs (see below).
+- **Projects section**: List of eight projects with names, descriptions, and URLs (see below).
 - **Footer**: Copyright Emmanuel Taiwo and current year.
 
 No separate about, contact, or blog pages — all primary information and links are on this single page.
@@ -52,9 +52,25 @@ No separate about, contact, or blog pages — all primary information and links 
 
 ## Projects (full descriptions and links)
 
+**Voice Globe**
+- URL: https://voiceglobe.live
+- Description: VoiceGlobe lets users leave short voice messages anywhere on Earth.
+
+**MRRradar**
+- URL: https://mrrradar.com
+- Description: Global map of profitable startups from TrustMRR API.
+
+**Ghstories**
+- URL: https://ghstories.xyz
+- Description: Turn your github commits into stories. Currently the main project Emmanuel is building.
+
+**CountdownParty**
+- URL: https://countdownparty.xyz
+- Description: Create beautiful and customizable real-time countdown for any event.
+
 **Snapwyr**
 - URL: https://snapwyr.xyz
-- Description: Zero-config HTTP request logger for Node.js with a real-time web dashboard. Currently the main project Emmanuel is building.
+- Description: Zero-config HTTP request logger for Node.js with a real-time web dashboard.
 
 **TypeServe Live**
 - URL: https://typeserve.live
@@ -84,9 +100,9 @@ No separate about, contact, or blog pages — all primary information and links 
 - **Title**: Software Engineer (full stack). Often targeted as "Software Engineer in Nigeria" or "Nigerian Software Engineer."
 - **Location**: Lagos, Nigeria. Available for remote and local roles.
 - **Contact**: emmanueltaiwo019@gmail.com; portfolio ${BASE_URL}; Resumé, GitHub, LinkedIn, X, Medium all linked on the homepage.
-- **Focus**: Scalable web applications, AI integration, developer tools, distributed systems. Currently building Snapwyr.
+- **Focus**: Scalable web applications, AI integration, developer tools, distributed systems. Currently building Ghstories.
 - **Tech**: TypeScript, React, Next.js, Node.js, PostgreSQL, MongoDB, Supabase, OpenAI, AWS, Docker, CI/CD.
-- **Projects**: Snapwyr (snapwyr.xyz), TypeServe (typeserve.com), TypeServe Live (typeserve.live), Limitly (limitly.xyz). All with descriptions and URLs above.
+- **Projects**: Voice Globe (voiceglobe.live), MRRradar (mrrradar.com), Ghstories (ghstories.xyz), CountdownParty (countdownparty.xyz), Snapwyr (snapwyr.xyz), TypeServe Live (typeserve.live), TypeServe (typeserve.com), Limitly (limitly.xyz). All with descriptions and URLs above.
 - **Content**: Single-page portfolio at ${BASE_URL}. No separate /about or /contact; all info and links on home page.
 - **Writing**: Medium (@emmanueloluwafunso) for technical articles.
 `;
