@@ -7,7 +7,8 @@ export interface Project {
   name: string;
   description: string;
   url: string;
-  image: string;
+  image?: string;
+  showInShowcase: boolean;
 }
 
 const SPEED_PX_PER_SEC = 15;

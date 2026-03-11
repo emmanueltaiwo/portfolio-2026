@@ -5,28 +5,38 @@ interface Project {
   name: string;
   description: string;
   url: string;
-  image: string;
+  image?: string;
+  showInShowcase: boolean;
 }
 
 const projects: Project[] = [
+  {
+    name: 'GithubRadar',
+    description: 'Flight radar but for GitHub activity happening right now.',
+    url: 'https://githubradar.vercel.app',
+    showInShowcase: false,
+  },
   {
     name: 'Voice Globe',
     description:
       'VoiceGlobe lets users leave short voice messages anywhere on Earth.',
     url: 'https://voiceglobe.live',
     image: '/voiceglobe.png',
+    showInShowcase: true,
   },
   {
     name: 'MRRradar',
     description: 'Global map of profitable startups from TrustMRR API.',
     url: 'https://mrrradar.com',
     image: '/mrrradar.png',
+    showInShowcase: true,
   },
   {
     name: 'Ghstories',
     description: 'Turn your github commits into stories',
     url: 'https://ghstories.xyz',
     image: '/ghstories.png',
+    showInShowcase: true,
   },
   {
     name: 'CountdownParty',
@@ -34,6 +44,7 @@ const projects: Project[] = [
       'Create beautiful and customizable real-time countdown for any event.',
     url: 'https://countdownparty.xyz',
     image: '/countdownparty.png',
+    showInShowcase: true,
   },
   {
     name: 'Snapwyr',
@@ -41,6 +52,7 @@ const projects: Project[] = [
       'Zero-config HTTP request logger for Node.js with a real-time web dashboard.',
     url: 'https://snapwyr.xyz',
     image: '/snapwyr.png',
+    showInShowcase: true,
   },
   {
     name: 'TypeServe Live',
@@ -48,6 +60,7 @@ const projects: Project[] = [
       'Generate temporary mock APIs instantly from your TypeScript type definitions in the web.',
     url: 'https://typeserve.live',
     image: '/typeserve-live.png',
+    showInShowcase: true,
   },
   {
     name: 'TypeServe',
@@ -55,6 +68,7 @@ const projects: Project[] = [
       'The first and only CLI tool that generates mock APIs directly from TypeScript types.',
     url: 'https://typeserve.com',
     image: '/typeserve.png',
+    showInShowcase: true,
   },
   {
     name: 'Limitly',
@@ -62,6 +76,7 @@ const projects: Project[] = [
       'TypeScript-first rate limiting service with Redis backend. Built for distributed systems with graceful degradation.',
     url: 'https://limitly.xyz',
     image: '/limitly.png',
+    showInShowcase: true,
   },
 ];
 
@@ -121,7 +136,9 @@ export default function Page() {
         </section>
 
         <section className='w-full py-10 sm:py-16 -mx-4 sm:mx-0'>
-          <ProjectScroller projects={projects} />
+          <ProjectScroller
+            projects={projects.filter((project) => project.showInShowcase)}
+          />
         </section>
 
         <section className='w-full py-10 sm:py-16'>
