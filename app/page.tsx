@@ -11,6 +11,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'MMRStory',
+    description:
+      'Generate shareable Wrapped-style stories from TrustMRR startup data.',
+    url: 'https://mmrstory.xyz',
+    showInShowcase: false,
+  },
+  {
     name: 'GithubRadar',
     description: 'Flight radar but for GitHub activity happening right now.',
     url: 'https://githubradar.vercel.app',
