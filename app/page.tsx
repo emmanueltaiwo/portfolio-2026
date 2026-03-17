@@ -14,7 +14,7 @@ const projects: Project[] = [
     name: 'MMRStory',
     description:
       'Generate shareable Wrapped-style stories from TrustMRR startup data.',
-    url: 'https://mmrstory.xyz',
+    url: 'https://mrrstory.xyz',
     showInShowcase: false,
   },
   {
