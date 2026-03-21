@@ -11,6 +11,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: '9jaCheckr',
+    description: 'Verify Nigerian product registrations.',
+    url: 'https://9jacheckr.xyz',
+    image: '/9jacheckr.png',
+    showInShowcase: true,
+  },
+  {
     name: 'MMRStory',
     description:
       'Generate shareable Wrapped-style stories from TrustMRR startup data.',
@@ -21,7 +28,8 @@ const projects: Project[] = [
     name: 'GithubRadar',
     description: 'Flight radar but for GitHub activity happening right now.',
     url: 'https://githubradar.vercel.app',
-    showInShowcase: false,
+    showInShowcase: true,
+    image: '/githubradar.png',
   },
   {
     name: 'Voice Globe',
