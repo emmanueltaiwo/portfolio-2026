@@ -8,13 +8,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: '9jaCheckr',
-    description: 'Verify Nigerian product registrations.',
-    url: 'https://9jacheckr.xyz',
-    image: '/9jacheckr.png',
-    showInShowcase: true,
-  },
-  {
     name: 'MMRStory',
     description:
       'Generate shareable Wrapped-style stories from TrustMRR startup data.',
