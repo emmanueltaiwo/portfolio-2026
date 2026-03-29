@@ -8,6 +8,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'Face Verify',
+    description:
+      'Real-time face verification in the browser with guided KYC-style steps.',
+    url: 'https://faceverify-app.vercel.app',
+    showInShowcase: false,
+  },
+  {
     name: 'MMRStory',
     description:
       'Generate shareable Wrapped-style stories from TrustMRR startup data.',
