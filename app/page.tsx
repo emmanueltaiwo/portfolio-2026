@@ -1,3 +1,5 @@
+import { ArrowUpRight } from 'lucide-react';
+
 interface Project {
   name: string;
   description: string;
@@ -152,9 +154,11 @@ export default function Page() {
                     {project.description}
                   </p>
                 </div>
-                <span className='text-white/40 group-hover:text-white/80 transition-colors duration-150 text-base shrink-0 pt-0.5'>
-                  ↗
-                </span>
+                <ArrowUpRight
+                  aria-hidden
+                  className='size-4 shrink-0 text-white/40 group-hover:text-white/80 transition-colors duration-150 pt-0.5'
+                  strokeWidth={1.5}
+                />
               </a>
             ))}
             <div className='border-t border-white/8' />
